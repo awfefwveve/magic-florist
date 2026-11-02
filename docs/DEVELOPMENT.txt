@@ -1,0 +1,32 @@
+﻿MAGIC FLORIST v0.3 / 개발 및 검증
+
+Godot 4.7.2 stable / GDScript / Compatibility 렌더러 / Windows x64.
+main.gd는 progression_state.gd를 사용합니다. 이 상태는 game_state.gd의 제작 규칙을 확장합니다.
+legacy_state_v1/v2와 legacy_content_v1/v2 및 legacy_catalog_v1/v2는 저장 검증·변환용입니다.
+배포에서 제거하지 마세요. tests/test_game.gd는 v3 검사의 진입점입니다.
+
+명령 (godot는 설치된 실행 파일로 치환)
+godot --headless --path . --script res://tests/test_v2.gd
+godot --headless --path . --script res://tests/test_v3.gd
+godot --path . --audio-driver Dummy -- --qa --qa-output=C:/absolute/test-output
+
+규칙 검사는 기본 제작/저장 회귀와 새 진행 시스템을 나눠 검사합니다.
+화면 검사는 엔진에 마우스 눌림/이동/뗌 이벤트를 보내 실제 위젯·드래그·도구 경로를 통과합니다.
+QA 모드에서는 활동 타이머와 사용자 자동 저장을 끄고 테스트 폴더에 저장합니다.
+화면 검사의 성장 시간과 엔딩 직전 숙련도는 빠른 검증을 위해 설정합니다.
+규칙 검사에서는 수확/판매 횟수/숙련 처리와 엔딩 조건을 별도로 검증합니다.
+
+빌드
+같은 버전의 공식 Windows export template으로 Windows Desktop 내보내기.
+배포 EXE에는 PCK와 한국어 폰트 포함. GODOT_LICENSES.txt와 OFL.txt 고지를 동봉합니다.
+이번 배포는 코드 서명 또는 스토어 제출을 하지 않은 기능 테스트본입니다.
+
+저장
+%APPDATA%/MagicFloristPrototype/의 garden.sav 및 garden.bak.
+스키마 v3는 NPC 진행/발견/장식/효과/정보/상인 재고/설정/엔딩까지 저장합니다.
+v1/v2 원본은 자동 변환 전에 .v1-original/.v2-original로 보존합니다.
+v2 주문/작업/재화/해금은 유지하고 새 필드만 기본값을 추가합니다.
+v1은 작업 재료 반환과 영업 전 복귀, 재배 비율 유지 정책을 사용합니다.
+암호화/HMAC/범위·단계 검증은 가벼운 로컬 변조 억제이며 크랙을 완전히 막지는 못합니다.
+
+수치와 예시 콘텐츠의 확정 여부는 PLAN_REVIEW.txt를 참조하세요.

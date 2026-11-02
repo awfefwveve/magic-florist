@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "assets": {
+    "flower.rose": {
+      "path": "res://assets/flowers/rose.svg",
+      "width": 256,
+      "height": 256,
+      "pivot": "bottom_center",
+      "safe_area": "캔버스 가장자리 8% 여백"
+    },
+    "flower.daisy": {
+      "path": "res://assets/flowers/daisy.svg",
+      "width": 256,
+      "height": 256,
+      "pivot": "bottom_center",
+      "safe_area": "캔버스 가장자리 8% 여백"
+    },
+    "flower.moon": {
+      "path": "res://assets/flowers/moon.svg",
+      "width": 256,
+      "height": 256,
+      "pivot": "bottom_center",
+      "safe_area": "캔버스 가장자리 8% 여백"
+    },
+    "character.lia": {
+      "path": "res://assets/characters/lia.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "머리와 양손을 중앙 80% 안에 배치; 발 기준 하단 94%"
+    },
+    "character.ren": {
+      "path": "res://assets/characters/ren.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "머리와 양손을 중앙 80% 안에 배치; 발 기준 하단 94%"
+    },
+    "prop.bouquet": {
+      "path": "res://assets/props/bouquet.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "bottom_center",
+      "safe_area": "캔버스 가장자리 8% 여백"
+    },
+    "background.shop": {
+      "path": "res://assets/backgrounds/shop.svg",
+      "width": 1920,
+      "height": 1080,
+      "pivot": "center",
+      "safe_area": "중앙 UI 영역에는 필수 정보나 문구를 그리지 않음; 가장자리는 잘릴 수 있음"
+    },
+    "background.garden": {
+      "path": "res://assets/backgrounds/garden.svg",
+      "width": 1920,
+      "height": 1080,
+      "pivot": "center",
+      "safe_area": "중앙 UI 영역에는 필수 정보나 문구를 그리지 않음; 가장자리는 잘릴 수 있음"
+    },
+    "background.atelier": {
+      "path": "res://assets/backgrounds/atelier.svg",
+      "width": 1920,
+      "height": 1080,
+      "pivot": "center",
+      "safe_area": "중앙 UI 영역에는 필수 정보나 문구를 그리지 않음; 가장자리는 잘릴 수 있음"
+    },
+    "flower.freesia": {
+      "path": "res://assets/flowers/freesia.svg",
+      "width": 256,
+      "height": 256,
+      "pivot": "bottom_center",
+      "safe_area": "줄기 끝 (128,218), 중앙 84%"
+    },
+    "flower.lovemis": {
+      "path": "res://assets/flowers/lovemis.svg",
+      "width": 256,
+      "height": 256,
+      "pivot": "bottom_center",
+      "safe_area": "줄기 끝 (128,218), 중앙 84%"
+    },
+    "flower.yellow": {
+      "path": "res://assets/flowers/yellow.svg",
+      "width": 256,
+      "height": 256,
+      "pivot": "bottom_center",
+      "safe_area": "줄기 끝 (128,218), 중앙 84%"
+    },
+    "flower.redflora": {
+      "path": "res://assets/flowers/redflora.svg",
+      "width": 256,
+      "height": 256,
+      "pivot": "bottom_center",
+      "safe_area": "줄기 끝 (128,218), 중앙 84%"
+    },
+    "prop.paper": {
+      "path": "res://assets/props/paper.svg",
+      "width": 1024,
+      "height": 640,
+      "pivot": "center",
+      "safe_area": "외곽 8% 여백"
+    },
+    "prop.pot": {
+      "path": "res://assets/props/pot.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "외곽 8% 여백"
+    },
+    "prop.scissors": {
+      "path": "res://assets/props/scissors.svg",
+      "width": 128,
+      "height": 128,
+      "pivot": "center",
+      "safe_area": "외곽 8% 여백"
+    },
+    "prop.wire": {
+      "path": "res://assets/props/wire.svg",
+      "width": 128,
+      "height": 128,
+      "pivot": "center",
+      "safe_area": "외곽 8% 여백"
+    },
+    "prop.ribbon": {
+      "path": "res://assets/props/ribbon.svg",
+      "width": 128,
+      "height": 128,
+      "pivot": "center",
+      "safe_area": "외곽 8% 여백"
+    },
+    "prop.soil": {
+      "path": "res://assets/props/soil.svg",
+      "width": 128,
+      "height": 128,
+      "pivot": "center",
+      "safe_area": "외곽 8% 여백"
+    },
+    "prop.wrap": {
+      "path": "res://assets/props/wrap.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "bottom_center",
+      "safe_area": "접힌 포장지 전용. 꽃, 철사, 리본은 그리지 않음."
+    },
+    "decor.wall_basic": {
+      "path": "res://assets/decor/wall_basic.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.wall_garden": {
+      "path": "res://assets/decor/wall_garden.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.wall_moon": {
+      "path": "res://assets/decor/wall_moon.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.floor_basic": {
+      "path": "res://assets/decor/floor_basic.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.floor_garden": {
+      "path": "res://assets/decor/floor_garden.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.floor_moon": {
+      "path": "res://assets/decor/floor_moon.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.chair_basic": {
+      "path": "res://assets/decor/chair_basic.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.chair_garden": {
+      "path": "res://assets/decor/chair_garden.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.chair_moon": {
+      "path": "res://assets/decor/chair_moon.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.planter_basic": {
+      "path": "res://assets/decor/planter_basic.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.planter_garden": {
+      "path": "res://assets/decor/planter_garden.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.planter_moon": {
+      "path": "res://assets/decor/planter_moon.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.frame_basic": {
+      "path": "res://assets/decor/frame_basic.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.frame_garden": {
+      "path": "res://assets/decor/frame_garden.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.frame_moon": {
+      "path": "res://assets/decor/frame_moon.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.clock_basic": {
+      "path": "res://assets/decor/clock_basic.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.clock_garden": {
+      "path": "res://assets/decor/clock_garden.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "decor.clock_moon": {
+      "path": "res://assets/decor/clock_moon.svg",
+      "width": 512,
+      "height": 512,
+      "pivot": "center",
+      "safe_area": "투명 배경, 중앙 92%. 색상은 UI에서 틴트 적용."
+    },
+    "character.sentinel": {
+      "path": "res://assets/characters/sentinel.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.amelia": {
+      "path": "res://assets/characters/amelia.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.liam": {
+      "path": "res://assets/characters/liam.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.adrian": {
+      "path": "res://assets/characters/adrian.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.sophia": {
+      "path": "res://assets/characters/sophia.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.vivian": {
+      "path": "res://assets/characters/vivian.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.julian": {
+      "path": "res://assets/characters/julian.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.isla": {
+      "path": "res://assets/characters/isla.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.caleb": {
+      "path": "res://assets/characters/caleb.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "character.clara": {
+      "path": "res://assets/characters/clara.svg",
+      "width": 768,
+      "height": 1024,
+      "pivot": "bottom_center",
+      "safe_area": "임시 초상화. 최종 인물별 그림으로 교체 가능."
+    },
+    "ui.book": {
+      "path": "res://assets/ui/book.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.clock": {
+      "path": "res://assets/ui/clock.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.calendar": {
+      "path": "res://assets/ui/calendar.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.scroll": {
+      "path": "res://assets/ui/scroll.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.water": {
+      "path": "res://assets/ui/water.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.seeds": {
+      "path": "res://assets/ui/seeds.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.fertilizer": {
+      "path": "res://assets/ui/fertilizer.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.sprout": {
+      "path": "res://assets/ui/sprout.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    },
+    "ui.hand": {
+      "path": "res://assets/ui/hand.svg",
+      "width": 192,
+      "height": 172,
+      "pivot": "center",
+      "safe_area": "8% margin; transparent; replace using same ID"
+    }
+  }
+}

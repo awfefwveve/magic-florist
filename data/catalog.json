@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "balance": {
+    "starting_gold": 160,
+    "day_seconds": 480.0,
+    "patience_step_seconds": 30.0,
+    "visitor_gap_seconds": 4.0,
+    "pot_unlock_day": 2,
+    "mastery_target": 10,
+    "mastery_reward": 100,
+    "plot_unlock_cost": 50,
+    "max_gold": 9999999,
+    "max_inventory": 9999
+  },
+  "flowers": {
+    "freesia": {
+      "name": "프레지아",
+      "meaning": "열정 · 행복 · 빨간색",
+      "seed_cost": 8,
+      "grow_seconds": 360,
+      "harvest_min": 2,
+      "harvest_max": 4,
+      "asset": "flower.freesia",
+      "color": "#D8697E"
+    },
+    "lovemis": {
+      "name": "러브미스",
+      "meaning": "사랑 · 행복 · 분홍색",
+      "seed_cost": 8,
+      "grow_seconds": 240,
+      "harvest_min": 3,
+      "harvest_max": 5,
+      "asset": "flower.lovemis",
+      "color": "#E4A3B5"
+    },
+    "yellow": {
+      "name": "옐로튼",
+      "meaning": "성실함 · 우정 · 노란색",
+      "seed_cost": 6,
+      "grow_seconds": 240,
+      "harvest_min": 3,
+      "harvest_max": 5,
+      "asset": "flower.yellow",
+      "color": "#E1BF69"
+    },
+    "redflora": {
+      "name": "레드 플로아",
+      "meaning": "사랑 · 빨간색",
+      "seed_cost": 10,
+      "grow_seconds": 360,
+      "harvest_min": 2,
+      "harvest_max": 4,
+      "asset": "flower.redflora",
+      "color": "#BE5366"
+    }
+  },
+  "recipes": {
+    "birthday": {
+      "name": "사랑스러운 생일 꽃다발",
+      "kind": "bouquet",
+      "flowers": {
+        "freesia": 2,
+        "lovemis": 2,
+        "redflora": 1
+      },
+      "price": 100,
+      "unlock_day": 1
+    },
+    "friendship": {
+      "name": "성실한 우정 꽃다발",
+      "kind": "bouquet",
+      "flowers": {
+        "yellow": 5
+      },
+      "price": 90,
+      "unlock_day": 1
+    },
+    "love_pot": {
+      "name": "사랑이 넘치는 화분",
+      "kind": "pot",
+      "flowers": {
+        "freesia": 1,
+        "lovemis": 1
+      },
+      "price": 80,
+      "unlock_day": 2
+    }
+  },
+  "customers": [
+    {
+      "id": "sentinel",
+      "name": "센티널",
+      "asset": "character.lia",
+      "recipe": "birthday",
+      "lines": [
+        "생일이랑 어울리는 꽃다발 주세요. 오늘 엄마 생신이라 선물로 드릴 거거든요.",
+        "생일 꽃다발이에요. 사랑이랑 행복의 효과가 있으면 좋겠어요.",
+        "음, 빨간색이랑 핑크색이요.",
+        "프레지아와 러브미스가 들어가면 좋겠어요.",
+        "레드 플로아도 한 송이 더해 주세요.",
+        "프레지아 둘, 러브미스 둘, 레드 플로아 하나로 부탁해요."
+      ],
+      "thanks": "엄마가 정말 좋아하실 것 같아요. 고마워요!"
+    },
+    {
+      "id": "amelia",
+      "name": "아멜리아",
+      "asset": "character.ren",
+      "recipe": "friendship",
+      "lines": [
+        "열심히 공부하는 친구에게 꽃다발을 선물하고 싶어요.",
+        "성실함과 우정의 뜻을 담고 싶어요.",
+        "밝은 노란색이면 좋겠어요.",
+        "옐로튼으로 만들어 주세요.",
+        "다섯 송이 모두 같은 꽃으로 부탁해요.",
+        "옐로튼 다섯 송이로 만든 꽃다발이에요."
+      ],
+      "thanks": "친구에게 응원이 전해지겠어요."
+    },
+    {
+      "id": "sentinel_pot",
+      "name": "센티널",
+      "asset": "character.lia",
+      "recipe": "love_pot",
+      "lines": [
+        "이번에는 집에 두고 기를 작은 화분이 필요해요.",
+        "사랑과 행복이 가득한 화분이면 좋겠어요.",
+        "빨간 꽃 하나와 분홍 꽃 하나로요.",
+        "프레지아와 러브미스가 어울리겠어요.",
+        "꽃은 한 송이씩 심어 주세요.",
+        "프레지아 하나, 러브미스 하나를 심은 화분을 부탁해요."
+      ],
+      "thanks": "창가에 두고 잘 키울게요."
+    }
+  ]
+}

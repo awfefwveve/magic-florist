@@ -1,0 +1,405 @@
+{
+  "schema_version": 3,
+  "flower_days": {
+    "yellow": 1,
+    "freesia": 2,
+    "lovemis": 2,
+    "redflora": 3
+  },
+  "npcs": [
+    {
+      "id": "sentinel",
+      "name": "센티널",
+      "asset": "character.sentinel",
+      "preference": "birthday",
+      "goal": 5,
+      "bonus": 0.03,
+      "unlock_day": 1,
+      "description": "붉은 꽃을 좋아해요."
+    },
+    {
+      "id": "amelia",
+      "name": "아멜리아",
+      "asset": "character.amelia",
+      "preference": "friendship",
+      "goal": 5,
+      "bonus": 0.03,
+      "unlock_day": 1,
+      "description": "밝은 노란 꽃을 좋아해요."
+    },
+    {
+      "id": "liam",
+      "name": "리암",
+      "asset": "character.liam",
+      "preference": "love_pot",
+      "goal": 5,
+      "bonus": 0.03,
+      "unlock_day": 2,
+      "description": "창가에 둘 작은 화분을 좋아해요."
+    },
+    {
+      "id": "adrian",
+      "name": "에이드리언",
+      "asset": "character.adrian",
+      "preference": "birthday",
+      "goal": 5,
+      "bonus": 0.03,
+      "unlock_day": 2,
+      "description": "붉은 꽃을 좋아해요."
+    },
+    {
+      "id": "sophia",
+      "name": "소피아",
+      "asset": "character.sophia",
+      "preference": "love_pot",
+      "goal": 10,
+      "bonus": 0.06,
+      "unlock_day": 3,
+      "description": "창가에 둘 작은 화분을 좋아해요."
+    },
+    {
+      "id": "vivian",
+      "name": "비비안",
+      "asset": "character.vivian",
+      "preference": "birthday",
+      "goal": 10,
+      "bonus": 0.06,
+      "unlock_day": 3,
+      "description": "붉은 꽃을 좋아해요."
+    },
+    {
+      "id": "julian",
+      "name": "줄리안",
+      "asset": "character.julian",
+      "preference": "friendship",
+      "goal": 10,
+      "bonus": 0.06,
+      "unlock_day": 4,
+      "description": "밝은 노란 꽃을 좋아해요."
+    },
+    {
+      "id": "isla",
+      "name": "아일라",
+      "asset": "character.isla",
+      "preference": "love_pot",
+      "goal": 10,
+      "bonus": 0.06,
+      "unlock_day": 4,
+      "description": "창가에 둘 작은 화분을 좋아해요."
+    },
+    {
+      "id": "caleb",
+      "name": "케일럽",
+      "asset": "character.caleb",
+      "preference": "friendship",
+      "goal": 15,
+      "bonus": 0.1,
+      "unlock_day": 5,
+      "description": "밝은 노란 꽃을 좋아해요."
+    },
+    {
+      "id": "clara",
+      "name": "클라라",
+      "asset": "character.clara",
+      "preference": "birthday",
+      "goal": 15,
+      "bonus": 0.1,
+      "unlock_day": 5,
+      "description": "붉은 꽃을 좋아해요."
+    }
+  ],
+  "decor": {
+    "wall_basic": {
+      "name": "기본 벽지",
+      "slot": "wall",
+      "cost": 0,
+      "unlock_day": 1,
+      "effect": "patience",
+      "value": 0,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.wall_basic"
+    },
+    "wall_garden": {
+      "name": "정원 벽지",
+      "slot": "wall",
+      "cost": 120,
+      "unlock_day": 1,
+      "effect": "patience",
+      "value": 0.005,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.wall_garden"
+    },
+    "wall_moon": {
+      "name": "달빛 벽지",
+      "slot": "wall",
+      "cost": 240,
+      "unlock_day": 4,
+      "effect": "patience",
+      "value": 0.01,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.wall_moon"
+    },
+    "floor_basic": {
+      "name": "기본 바닥",
+      "slot": "floor",
+      "cost": 0,
+      "unlock_day": 1,
+      "effect": "patience",
+      "value": 0,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.floor_basic"
+    },
+    "floor_garden": {
+      "name": "정원 바닥",
+      "slot": "floor",
+      "cost": 120,
+      "unlock_day": 1,
+      "effect": "patience",
+      "value": 0.005,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.floor_garden"
+    },
+    "floor_moon": {
+      "name": "달빛 바닥",
+      "slot": "floor",
+      "cost": 240,
+      "unlock_day": 4,
+      "effect": "patience",
+      "value": 0.01,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.floor_moon"
+    },
+    "chair_basic": {
+      "name": "기본 의자",
+      "slot": "chair",
+      "cost": 0,
+      "unlock_day": 1,
+      "effect": "regular",
+      "value": 0,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.chair_basic"
+    },
+    "chair_garden": {
+      "name": "정원 의자",
+      "slot": "chair",
+      "cost": 120,
+      "unlock_day": 1,
+      "effect": "regular",
+      "value": 0.1,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.chair_garden"
+    },
+    "chair_moon": {
+      "name": "달빛 의자",
+      "slot": "chair",
+      "cost": 240,
+      "unlock_day": 4,
+      "effect": "regular",
+      "value": 0.2,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.chair_moon"
+    },
+    "planter_basic": {
+      "name": "기본 장식 화분",
+      "slot": "planter",
+      "cost": 0,
+      "unlock_day": 1,
+      "effect": "regular",
+      "value": 0,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.planter_basic"
+    },
+    "planter_garden": {
+      "name": "정원 장식 화분",
+      "slot": "planter",
+      "cost": 120,
+      "unlock_day": 1,
+      "effect": "regular",
+      "value": 0.1,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.planter_garden"
+    },
+    "planter_moon": {
+      "name": "달빛 장식 화분",
+      "slot": "planter",
+      "cost": 240,
+      "unlock_day": 4,
+      "effect": "regular",
+      "value": 0.2,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.planter_moon"
+    },
+    "frame_basic": {
+      "name": "기본 액자",
+      "slot": "frame",
+      "cost": 0,
+      "unlock_day": 1,
+      "effect": "day",
+      "value": 0,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.frame_basic"
+    },
+    "frame_garden": {
+      "name": "정원 액자",
+      "slot": "frame",
+      "cost": 120,
+      "unlock_day": 1,
+      "effect": "day",
+      "value": 0.05,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.frame_garden"
+    },
+    "frame_moon": {
+      "name": "달빛 액자",
+      "slot": "frame",
+      "cost": 240,
+      "unlock_day": 4,
+      "effect": "day",
+      "value": 0.1,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.frame_moon"
+    },
+    "clock_basic": {
+      "name": "기본 시계와 달력",
+      "slot": "clock",
+      "cost": 0,
+      "unlock_day": 1,
+      "effect": "day",
+      "value": 0,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.clock_basic"
+    },
+    "clock_garden": {
+      "name": "정원 시계와 달력",
+      "slot": "clock",
+      "cost": 120,
+      "unlock_day": 1,
+      "effect": "day",
+      "value": 0.05,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.clock_garden"
+    },
+    "clock_moon": {
+      "name": "달빛 시계와 달력",
+      "slot": "clock",
+      "cost": 240,
+      "unlock_day": 4,
+      "effect": "day",
+      "value": 0.1,
+      "colors": [
+        "#C5D5B3",
+        "#E7C7B2",
+        "#BACDDE"
+      ],
+      "asset": "decor.clock_moon"
+    }
+  },
+  "events": [
+    {
+      "id": "festival",
+      "name": "러브미스 축제",
+      "recipe": "love_pot",
+      "flower": "lovemis",
+      "duration": 1,
+      "description": "축제 당일에는 러브미스가 들어간 꽃 장식을 모두가 찾아요."
+    },
+    {
+      "id": "anniversary",
+      "name": "마을 감사 기념일",
+      "recipe": "birthday",
+      "flower": "redflora",
+      "duration": 1,
+      "description": "감사를 전하는 생일 꽃다발 주문이 이어져요."
+    },
+    {
+      "id": "trend",
+      "name": "옐로튼 유행",
+      "recipe": "friendship",
+      "flower": "yellow",
+      "duration": 2,
+      "description": "이틀 동안 옐로튼 꽃다발을 찾는 손님이 많아져요."
+    }
+  ],
+  "merchant": {
+    "ren_start": 2,
+    "lia_start": 3,
+    "interval": 3,
+    "information_cost": 25,
+    "potion_cost": 35,
+    "charm_cost": 45,
+    "potion_seconds": 180,
+    "charm_days": 2
+  },
+  "settings": {
+    "wait_min": 4,
+    "wait_max": 8
+  }
+}

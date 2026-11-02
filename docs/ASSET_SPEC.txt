@@ -1,0 +1,83 @@
+MAGIC FLORIST / 에셋 제작 및 교체 규격 v3
+
+공통
+- 기준 화면 1440×900 논리 픽셀, 가로 비율 확장. PNG RGBA 8bit/sRGB 권장, SVG 가능.
+- 배경 외에는 투명 배경. 투명 여백과 캔버스 크기를 유지하고 자동 잘라내지 않습니다.
+- 그림에 이름/가격/수량/대사를 넣지 않습니다. UI가 표시합니다.
+- data/assets.json의 고정 ID로 연결합니다. 같은 경로의 그림을 덮어쓰거나 path만 교체.
+- 교체 후 Godot에서 다시 가져오기와 재실행, Windows EXE는 재내보내기가 필요합니다.
+  실행 중 실시간 갱신이나 배포된 EXE의 외부 그림 갈아끼우기는 지원하지 않습니다.
+
+규격
+배경: 1920×1080, 불투명, 중앙 정렬. 비율에 따라 가장자리 잘림 허용.
+인물: 768×1024, 투명, 하단 중심. 머리/손은 중앙 80%, 발 기준 y=962.
+꽃 한 송이: 256×256, 투명. 꽃 머리 중심 (128,85), 줄기 끝 (128,218).
+  머리 그림은 x=16~240, y=0~141 안에 담으세요.
+  다듬기 후에는 이 영역을 잘라 꽃 머리로 쓰고 잎 없는 줄기를 따로 그립니다.
+  잎은 머리 아래, 줄기 중간에 둡니다. 현재 가위 판정은 공통 직사각형 영역입니다.
+  머리/잎 분리 레이어나 종류별 판정 영역이 필요한 그림은 렌더러 확장이 필요합니다.
+펼친 포장지: 1024×640, 투명 가능. 꽃·리본을 포함하지 않는 빈 종이.
+접힌 포장지: 512×512, 투명. 상단 넓고 하단 좁은 실루엣, 꽃/철사/리본 제외.
+화분: 512×512, 투명. 입구 중앙, 몸통 아래쪽, 꽃/흙 제외.
+가위·철사·리본·흙: 128×128, 투명. 중앙 84% 안에 그림.
+
+완성 꽃 장식
+v2는 고정 꽃다발 그림을 표시하지 않고 선택한 실제 꽃, 접힌 종이, 철사, 리본을 합성합니다.
+prop.bouquet는 구버전 호환용으로만 남아 있습니다.
+제작대 나무 바탕, 점선 가이드, 다듬어진 줄기와 흙 표면은 코드로 그리는 공통 요소입니다.
+그 요소까지 전부 그림으로 교체하려면 별도 ID/레이어 확장이 필요합니다.
+
+연결된 ID / 경로 / 캔버스
+flower.rose: res://assets/flowers/rose.svg (256×256)
+flower.daisy: res://assets/flowers/daisy.svg (256×256)
+flower.moon: res://assets/flowers/moon.svg (256×256)
+character.lia: res://assets/characters/lia.svg (768×1024)
+character.ren: res://assets/characters/ren.svg (768×1024)
+prop.bouquet: res://assets/props/bouquet.svg (512×512)
+background.shop: res://assets/backgrounds/shop.svg (1920×1080)
+background.garden: res://assets/backgrounds/garden.svg (1920×1080)
+background.atelier: res://assets/backgrounds/atelier.svg (1920×1080)
+flower.freesia: res://assets/flowers/freesia.svg (256×256)
+flower.lovemis: res://assets/flowers/lovemis.svg (256×256)
+flower.yellow: res://assets/flowers/yellow.svg (256×256)
+flower.redflora: res://assets/flowers/redflora.svg (256×256)
+prop.paper: res://assets/props/paper.svg (1024×640)
+prop.pot: res://assets/props/pot.svg (512×512)
+prop.scissors: res://assets/props/scissors.svg (128×128)
+prop.wire: res://assets/props/wire.svg (128×128)
+prop.ribbon: res://assets/props/ribbon.svg (128×128)
+prop.soil: res://assets/props/soil.svg (128×128)
+prop.wrap: res://assets/props/wrap.svg (512×512)
+
+flower.rose/daisy/moon 및 prop.bouquet는 구버전 자료, 현재 플레이 꽃은
+flower.freesia/lovemis/yellow/redflora입니다.
+character.lia/ren은 구버전 임시 ID입니다. v3의 일반 손님은 캐릭터별 독립 ID를 사용합니다.
+
+교체 예시
+256×256 투명 PNG를 assets/flowers/freesia.png로 저장하고 assets.json의
+flower.freesia.path를 res://assets/flowers/freesia.png로 바꿉니다.
+ID와 width/height는 유지합니다. 재가져온 뒤 선반, 다듬기 전/후, 완성 장식을 확인하세요.
+새 꽃/새 조합 추가는 catalog.json과 저장 마이그레이션·테스트 변경도 필요합니다.
+
+검사
+자동 검사는 연결된 모든 그림의 로딩과 캔버스 크기를 확인합니다.
+투명도, 기준점, 가위 판정과 꽃 그림의 일치, 다양한 화면 비율은 눈으로 확인합니다.
+현재 그림은 교체용 임시 SVG입니다. 최종 납품 그림의 권리·제작자·라이선스는 별도 기록하세요.
+
+v3 추가 규격
+- character.sentinel/amelia/liam/adrian/sophia/vivian/julian/isla/caleb/clara:
+  각각 768×1024 투명 이미지. 기존 두 초상화를 임시 재사용하지만 파일·ID는 분리되어 있습니다.
+- decor.<종류>_<변형>: 512×512 투명 이미지. 종류 wall/floor/chair/planter/frame/clock,
+  변형 basic/garden/moon. 캔버스 중앙 92%에 그림. 종류별 고정 위치로 합성합니다.
+- 장식의 변경할 영역은 흰색/밝은 회색으로 제작하면 world.json colors의 틴트가 적용됩니다.
+  색을 바꾸지 않을 디테일은 원본 색에 틴트가 곱해지는 점을 확인하세요.
+- assets/audio/click.wav: 자체 합성한 단일 채널 22050Hz PCM16 WAV. 원하는 WAV/OGG로
+  교체하려면 main.gd의 preload 경로를 변경하고 재내보내세요. 외부 음원 권리는 별도 확인합니다.
+- 그림 파일 교체는 재가져오기와 재내보내기가 필요하며 배포 EXE의 실시간 교체는 지원하지 않습니다.
+
+
+v0.4 UI 에셋
+assets/ui/*.svg: 192×172, 투명 배경, 중심 피벗, 8% 안전 여백.
+data/assets.json의 ui.book/calendar/clock/scroll/water/seeds/fertilizer/sprout/hand ID를 유지하여 교체.
+scene_ui.gd는 장면 전체 비율(0~1)로 위치를 지정. scene_canvas.gd는 방 배경과 카운터를 그립니다.
+기존 꽃/도구/캐릭터 규격과 저장 데이터는 유지합니다.

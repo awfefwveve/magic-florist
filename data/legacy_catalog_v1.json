@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "balance": {
+    "starting_gold": 100,
+    "day_minutes": 480,
+    "minutes_per_second": 2.0,
+    "harvest_count": 3,
+    "max_gold": 9999999,
+    "max_inventory": 9999
+  },
+  "flowers": {
+    "rose": {
+      "name": "홍빛 장미",
+      "meaning": "용기와 응원",
+      "seed_cost": 8,
+      "grow_minutes": 24,
+      "asset": "flower.rose",
+      "color": "#CB6B79"
+    },
+    "daisy": {
+      "name": "햇살 데이지",
+      "meaning": "기쁨과 새로운 시작",
+      "seed_cost": 6,
+      "grow_minutes": 18,
+      "asset": "flower.daisy",
+      "color": "#D7AE55"
+    },
+    "moon": {
+      "name": "달빛 초롱",
+      "meaning": "위로와 편안한 잠",
+      "seed_cost": 10,
+      "grow_minutes": 30,
+      "asset": "flower.moon",
+      "color": "#9A91C2"
+    }
+  },
+  "recipes": {
+    "courage": {
+      "name": "작은 용기",
+      "flowers": {
+        "rose": 2,
+        "daisy": 1
+      },
+      "price": 65,
+      "description": "홍빛 장미 2 + 햇살 데이지 1"
+    },
+    "sunrise": {
+      "name": "새로운 아침",
+      "flowers": {
+        "daisy": 2,
+        "rose": 1
+      },
+      "price": 60,
+      "description": "햇살 데이지 2 + 홍빛 장미 1"
+    },
+    "rest": {
+      "name": "고요한 밤",
+      "flowers": {
+        "moon": 2,
+        "daisy": 1
+      },
+      "price": 75,
+      "description": "달빛 초롱 2 + 햇살 데이지 1"
+    }
+  },
+  "customers": [
+    {
+      "id": "lia",
+      "name": "리아",
+      "asset": "character.lia",
+      "recipe": "courage",
+      "story": "내일 처음으로 먼 숲에 편지를 배달해요.\n조금 떨리지만, 용기를 내고 싶어요.",
+      "thanks": "이 꽃을 보면 한 걸음 더 나아갈 수 있겠어요."
+    },
+    {
+      "id": "ren",
+      "name": "렌",
+      "asset": "character.ren",
+      "recipe": "sunrise",
+      "story": "작은 찻집을 여는 친구에게 선물하려고요.\n새로운 아침처럼 환한 꽃이면 좋겠어요.",
+      "thanks": "가게 창가가 한결 환해지겠네요. 고마워요!"
+    },
+    {
+      "id": "lia",
+      "name": "리아",
+      "asset": "character.lia",
+      "recipe": "rest",
+      "story": "긴 여행을 마친 동생이 돌아왔어요.\n오늘 밤은 편히 쉴 수 있게 해주고 싶어요.",
+      "thanks": "오늘은 동생도 좋은 꿈을 꿀 것 같아요."
+    }
+  ]
+}
